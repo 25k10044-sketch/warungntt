@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FAF3E3;
+    color: #1F1A17;
+}
+
+[x-cloak] {
+    display: none !important;
+}
+
+:focus-visible {
+    outline: 3px solid #D9A441;
+    outline-offset: 3px;
+}
+
+::selection {
+    background: #D9A441;
+    color: #1F1A17;
+}
+
+.tenun-pattern {
+    background-color: #7A1F1F;
+    background-image:
+        linear-gradient(135deg, transparent 25%, #D9A441 25%, #D9A441 37.5%, transparent 37.5%, transparent 62.5%, #D9A441 62.5%, #D9A441 75%, transparent 75%),
+        linear-gradient(45deg, transparent 25%, #FAF3E3 25%, #FAF3E3 37.5%, transparent 37.5%, transparent 62.5%, #FAF3E3 62.5%, #FAF3E3 75%, transparent 75%);
+    background-position: 0 0, 7px 0;
+    background-size: 14px 8px;
+}
+
+.tenun-panel {
+    background-color: #1F1A17;
+    background-image:
+        repeating-linear-gradient(135deg, transparent 0 22px, rgb(217 164 65 / 10%) 22px 24px, transparent 24px 46px),
+        repeating-linear-gradient(45deg, transparent 0 22px, rgb(250 243 227 / 7%) 22px 24px, transparent 24px 46px);
+}
+
+.focus-ring-ntt:focus-visible {
+    outline-color: #7A1F1F;
+}
+
+@layer components {
+    .ntt-form-control {
+        @apply min-h-11 rounded-lg border-stone-300 bg-white text-[#1F1A17] shadow-sm focus:border-[#7A1F1F] focus:ring-[#7A1F1F];
+    }
+
+    .ntt-primary-button {
+        @apply inline-flex min-h-11 items-center justify-center rounded-lg bg-[#7A1F1F] px-5 font-semibold text-white transition-colors hover:bg-[#5f1717] disabled:cursor-not-allowed disabled:opacity-60;
+    }
+}
