@@ -6,7 +6,7 @@ Aplikasi warung online untuk mengenal dan memesan makanan khas Nusa Tenggara Tim
 
 - **Aplikasi deploy:** Belum dideploy. Setelah deploy, ganti dengan `https://<nama-layanan>.onrender.com`.
 - **Repository GitHub:** Ganti dengan `https://github.com/<username>/<repository>` setelah repository dipublikasikan.
-- **Panduan deploy:** [DEPLOYMENT.md](DEPLOYMENT.md) (Render + Aiven MySQL).
+- **Panduan deploy:** [DEPLOYMENT.md](DEPLOYMENT.md) (Render + Aiven MySQL) atau [DEPLOYMENT_INFINITYFREE.md](DEPLOYMENT_INFINITYFREE.md) (InfinityFree + FileZilla).
 
 ## Fitur
 
